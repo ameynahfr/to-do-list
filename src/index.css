@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://wallpapercave.com/wp/wp8533267.jpg");
+  font-family: 'Walter Turncoat', cursive;
+  background-size: cover;
+}
+
+.card {
+  padding: 8px;
+  border-radius: 3px;
+  margin: 5px;
+  background-color: rgb(228, 215, 231);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  width: 40px;
+}
+
+.title {
+  padding: 10px;
+  font-size: 30px;
+}
+
+span {
+  font-size: 20px;
+  font-style: bold;
+}
+
+.tick {
+  width: 25px;
+  margin-right: 10px;
+
+}
+
+.tick:hover {
+  cursor: pointer;
+  content: url('./components/check-circle.svg');
+}
+
+.Enter-Task {
+  margin-top: 200px;
+}
+
+#box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 5px;
+  width: calc(100% - 10px);
+  padding: 15px;
+  background-color: rgb(228, 215, 231);
+  box-shadow: 0px -2px 5px rgb(205, 104, 236);
+  border: 2px solid transparent; /* Set the default border color to transparent */
+  transition: border-color 0.3s ease-in-out; /* Smooth transition for border color change */
+  
+    /* Change border color when input is focused (clicked on) */
+   &:focus {
+     border-color: rgb(205, 104, 236); /* New border color when focused */
+      outline: none; /* Remove default focus outline */
+    }
+}
+  
+    
+.deleteTask {
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+
+}
